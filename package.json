@@ -11,14 +11,28 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.obsessiveSelected",
+        "onCommand:extension.obsessiveAll"
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            // {
+            //     "command": "extension.sayHello",
+            //     "title": "Hello World",
+            //     "category": "hello"
+            // },
+            {
+                "command": "extension.obsessiveSelected",
+                "title": "局部强迫症",
+                "category": "obsessive"
+            },
+            {
+                "command": "extension.obsessiveAll",
+                "title": "骨灰强迫症",
+                "category": "obsessive"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
