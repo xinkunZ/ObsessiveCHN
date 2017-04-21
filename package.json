@@ -2,7 +2,7 @@
     "name": "obsessivechn",
     "displayName": "ObsessiveCHN",
     "description": "insert whitespace between English and Chinese",
-    "version": "0.0.1",
+    "version": "0.1",
     "publisher": "zhangxinkun",
     "engines": {
         "vscode": "^1.11.0"
