@@ -9,7 +9,6 @@
 * 仅调整选中文字
 * 配置：是否为英文加入 MarkDown 等宽语法
 
-\!\[feature X\]\(images/feature-x.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
