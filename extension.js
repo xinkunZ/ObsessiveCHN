@@ -9,11 +9,16 @@ function activate(context) {
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "obsessivechn" is now active!');
-   
-    var dis1 = vscode.commands.registerCommand('extension.obsessiveAll', replace());
+
+    var dis1 = vscode.commands.registerCommand('extension.obsessiveAll', replaceHello());
 
     context.subscriptions.push(dis1);
 }
+
+function replaceHello() {
+    vscode.window.showInformationMessage('Hello World!');
+}
+
 
 function replace() {
     var editor = vscode.window.activeTextEditor;
