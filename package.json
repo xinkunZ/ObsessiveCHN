@@ -11,20 +11,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.obsessiveSelected",
         "onCommand:extension.obsessiveAll"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.obsessiveSelected",
-                "title": "局部强迫症",
-                "category": "obsessive"
-            },
-            {
                 "command": "extension.obsessiveAll",
-                "title": "骨灰强迫症",
+                "title": "执行强迫症",
                 "category": "obsessive"
             }
         ]
