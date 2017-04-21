@@ -18,8 +18,8 @@
         "commands": [
             {
                 "command": "extension.obsessiveAll",
-                "title": "obsessive all",
-                "category": "obsessive"
+                "title": "%obsessiveAll%",
+                "category": "%obsessive%"
             }
         ]
     },
