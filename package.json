@@ -1,8 +1,8 @@
 {
     "name": "obsessivechn",
     "displayName": "ObsessiveCHN",
-    "description": "insert whitespace between English and Chinese",
-    "version": "0.1.1",
+    "description": "Add whitespace between English and Chinese",
+    "version": "0.1.2",
     "publisher": "zhangxinkun",
     "engines": {
         "vscode": "^1.11.0"
