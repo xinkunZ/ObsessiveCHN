@@ -43,7 +43,7 @@ function replaceSelected() {
 function replaceAll() {
     var editor = vscode.window.activeTextEditor;
     var selection = editor.selection;
-    var newText = regReplace(editor.document.getText(selection));
+    var newText = regReplace(editor.document.getText());
     return editor.edit((edit) => {
         edit.replace(selection, newText)
     });

@@ -17,11 +17,6 @@
     "main": "./extension",
     "contributes": {
         "commands": [
-            // {
-            //     "command": "extension.sayHello",
-            //     "title": "Hello World",
-            //     "category": "hello"
-            // },
             {
                 "command": "extension.obsessiveSelected",
                 "title": "局部强迫症",
