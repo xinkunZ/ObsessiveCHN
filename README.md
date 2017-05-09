@@ -17,3 +17,7 @@
 ## Release Notes
 * 0.1.1
   1. 一键在英文字符和中文字符间插入空格
+  
+
+## Licence
+* **[Apache](http://www.apache.org/licenses/LICENSE-2.0)**
