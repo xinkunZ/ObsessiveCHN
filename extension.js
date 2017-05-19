@@ -15,8 +15,8 @@ function activate(context) {
     context.subscriptions.push(dis1);
 }
 
-var formatLeft = /([a-z,A-Z]+)([\u4e00-\u9fa5])/g;
-var formatRight = /([\u4e00-\u9fa5])([a-z,A-Z]+)/g;
+var formatLeft = /([\u4e00-\u9fa5])([a-z,A-Z]+)/g;
+var formatRight = /([a-z,A-Z]+)([\u4e00-\u9fa5])/g;
 
 function replace() {
 
@@ -33,13 +33,13 @@ function replace() {
     if (isAnythingSelected()) {
         range = editor.selection;
     }
+    var newText = editor.document.getText(range);
 
-    var replaceStr = "$1 $2";
     if (document.languageId == "markdown") {
-        replaceStr = "$1`$2`";
+        newText.replace(formatLeft,"$1`$2`").replace(formatRight,"`$1`$2");
+    } else {
+        newText.replace(formatLeft, "$1 $2").replace(formatRight, "$1 $2")
     }
-
-    var newText = editor.document.getText(range).replace(formatLeft, replaceStr).replace(formatRight, replaceStr);
 
     return editor.edit((edit) => {
         edit.replace(range, newText);
