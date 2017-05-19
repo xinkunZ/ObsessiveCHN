@@ -30,12 +30,16 @@ function replace() {
         // last character:
         document.lineAt(document.lineCount - 1).range.end.character);
 
-
     if (isAnythingSelected()) {
         range = editor.selection;
     }
 
-    var newText = editor.document.getText(range).replace(formatLeft, '$1 $2').replace(formatRight, '$1 $2');
+    var replaceStr = "$1 $2";
+    if (document.languageId == "markdown") {
+        replaceStr = "$1`$2`";
+    }
+
+    var newText = editor.document.getText(range).replace(formatLeft, replaceStr).replace(formatRight, replaceStr);
 
     return editor.edit((edit) => {
         edit.replace(range, newText);
