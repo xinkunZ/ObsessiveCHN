@@ -10,7 +10,7 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "obsessivechn" is now active!');
 
-    var dis1 = vscode.commands.registerCommand('extension.obsessiveAll', replace);
+    var dis1 = vscode.commands.registerCommand('extension.quickMono', replace);
 
     context.subscriptions.push(dis1);
 }

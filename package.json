@@ -1,8 +1,8 @@
 {
     "name": "obsessivechn",
-    "displayName": "ObsessiveCHN",
-    "description": "让编写文档更加简单美观",
-    "version": "0.1.9",
+    "displayName": "QuickMono",
+    "description": "让md文档编写更加简单",
+    "version": "0.2.0",
     "publisher": "zhangxinkun",
     "engines": {
         "vscode": "^1.11.0"
@@ -11,14 +11,14 @@
         "Formatters"
     ],
     "activationEvents": [
-        "onCommand:extension.obsessiveAll"
+        "onCommand:extension.quickMono"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.obsessiveAll",
-                "title": "%obsessiveAll%",
+                "command": "extension.quickMono",
+                "title": "%quickMono%",
                 "category": "%obsessive%"
             }
         ]
