@@ -15,6 +15,8 @@
 * [F**k me on GitHub](https://github.com/xinkunZ/ObsessiveCHN)
 
 ## Release Notes
+* 0.1.4
+  1. 如果当前文件是markdown，则使用等宽语法代替空格
 * 0.1.1
   1. 一键在英文字符和中文字符间插入空格
   
